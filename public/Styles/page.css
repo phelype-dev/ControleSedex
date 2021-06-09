@@ -1,0 +1,69 @@
+/*Aqui terá a configuração do form para o Index login*/
+.fundo{
+    background-color: #031D44;
+}
+.form-login {
+
+    margin-top: 10rem;
+    border-radius: 1rem;
+    border-color: black;
+    background-color: #ececec;
+    height: 28rem;
+    width:25rem;
+}
+/*p {
+    font-size: 2rem;
+    color: black;
+}*/
+.label-config{
+    color: white;
+}
+.input-config {
+    background-color: #ececec;
+    height: 1rem;
+}
+.btn-login {
+    margin-top: 1rem;
+}
+.btn-config {
+    background-color: #dab785;
+}
+
+.text-center {
+    text-align: center;
+    margin-top: 2rem;
+}
+.img {
+    width: 122px;
+    height: 122px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+/*Fim da configurção do form index*/
+
+/*Configurações da Navbar*/
+.nav-color {
+    background-color: #031D44;
+}
+/*Fim das configurações da Navbar*/
+
+/*container da home*/
+.container-home {
+    margin-top: 1.5rem;
+}
+
+.col-config {
+    margin-right: 0.8rem;
+    margin-left: 0.8rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    border-radius: 0.4rem;
+}
+.p {
+    font-size: 14px;
+}
+
+.color {
+    background-color: #ececec;
+}
+/*Fim do container da home*/

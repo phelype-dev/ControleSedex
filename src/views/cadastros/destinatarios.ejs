@@ -1,0 +1,151 @@
+<%- include('../parts/header') %>
+
+    <body>
+        <%- include('../parts/navbar') %> %>
+
+            <div class="container container-home">
+                <div class="row justify-content-md-center">
+                    <div class="col-8">
+                        <div class="shadow-lg p-3 mb-5 bg-body rounded">
+                            <p class="text-muted" style="text-align:center;">Cadastro destinatário</p>
+                            <hr>
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="destinatario">Destinatário</label>
+                                            <select name="destinatario" id="destinatario" class="form-control form-control-sm">
+                                                <option value="">Teste</option>
+                                                <option value="">Teste1</option>
+                                                <option value="">Teste@</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="aoscuidado">Aos Cuidados de:</label>
+                                            <input type="text" id="aoscuidado" name="aoscuidado"
+                                                class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="form-group">
+                                            <label for="cpf">CPF:</label>
+                                            <input id="CPF" placeholder="CPF" maxlength="14" class="form-control form-control-sm" onkeypress="mascara(this, cpf)">
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="form-group">
+                                            <label for="CEP">CEP:</label>
+                                            <input id="CEP" placeholder="CEP" maxlength="9" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="logradouro">Logradouro:</label>
+                                            <input id="logradouro" name="logradouro" type="text" placeholder="logradouro" maxlength="100" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="form-group">
+                                            <label for="numero">Número:</label>
+                                            <input type="number" id="numero" name="numero" placeholder="000" maxlength="4" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="bairro">Bairro/Setor:</label>
+                                            <input type="text" id="bairro" name="bairro" placeholder="Setor Marista" maxlength="100" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="complemento">Complemento:</label>
+                                            <input type="text" id="complemento" name="complemento" placeholder="Esquina com Rua 15" maxlength="100" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                    <div class="col-1">
+                                        <div class="form-group">
+                                            <label for="estado">Estado:</label>
+                                            <select name="estado" id="estado" class="form-control form-control-sm">
+                                                <option value="">GO</option>
+                                                <option value="">SP</option>
+                                                <option value="">RO</option>
+                                                <option value="">MG</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-group">
+                                            <label for="cidade">Cidade:</label>
+                                            <select name="cidade" id="cidade" class="form-control form-control-sm">
+                                                <option value="">Goiânia</option>
+                                                <option value="">Rio Verde</option>
+                                                <option value="">Jataí</option>
+                                                <option value="">Campestre</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-group">
+                                            <label for="latitude">Latitude:</label>
+                                            <input type="text" id="latitude" name="latitude" placeholder="" maxlength="12" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-group">
+                                            <label for="longitude">Longitude:</label>
+                                            <input type="text" id="longitude" name="longitude" placeholder="" maxlength="12" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-group">
+                                            <label for="celular">Celular:</label>
+                                            <input type="text" id="celular" name="celular" placeholder="" maxlength="14" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-group">
+                                            <label for="telefone">Telefone:</label>
+                                            <input type="text" id="telefone" name="telefone" placeholder="" maxlength="" class="form-control form-control-sm"
+                                            data-mask="00/00/0000"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-group">
+                                            <label for="transportadora">Transportadora:</label>
+                                            <select name="transportadora" id="transportadora" class="form-control form-control-sm">
+                                                <option value="">Sedex</option>
+                                                <option value="">JA Transportes</option>
+                                                <option value="">LA Transportes</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                
+                                    <div class="col-3">  
+                                        <br> 
+                                        <div class="button-group">
+                                            <button class="btn btn-sm btn-primary">
+                                                Cadastrar
+                                            </button>
+                                            <button class="btn btn-sm btn-danger">
+                                                Cancelar
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    </body>
+    <%- include('../parts/footer') %>
+
+    <script>
+        function teste(number) {
+            var tel = number.value;
+
+            console.log(tel);
+        }
+    </script>
