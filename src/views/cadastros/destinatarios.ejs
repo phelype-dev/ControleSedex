@@ -31,13 +31,15 @@
                                     <div class="col-2">
                                         <div class="form-group">
                                             <label for="cpf">CPF:</label>
-                                            <input id="CPF" placeholder="CPF" maxlength="14" class="form-control form-control-sm" onkeypress="mascara(this, cpf)">
+                                            <input id="CPF" maxlength="14" class="form-control form-control-sm" oninput="mascara(this)"
+                                            placeholder="000.000.000-00">
                                         </div>
                                     </div>
                                     <div class="col-2">
                                         <div class="form-group">
                                             <label for="CEP">CEP:</label>
-                                            <input id="CEP" placeholder="CEP" maxlength="9" class="form-control form-control-sm">
+                                            <input id="CEP" maxlength="9" class="form-control form-control-sm" oninput="mascaraCEP(this)"
+                                            placeholder="00000-000">
                                         </div>
                                     </div>
                                     <div class="col-6">
@@ -89,7 +91,8 @@
                                     <div class="col-3">
                                         <div class="form-group">
                                             <label for="latitude">Latitude:</label>
-                                            <input type="text" id="latitude" name="latitude" placeholder="" maxlength="12" class="form-control form-control-sm">
+                                            <input type="text" id="latitude" name="latitude" placeholder="" maxlength="12" class="form-control form-control-sm"
+                                            oninput="mascaraLongitude(this)">
                                         </div>
                                     </div>
                                     <div class="col-3">
@@ -108,7 +111,7 @@
                                         <div class="form-group">
                                             <label for="telefone">Telefone:</label>
                                             <input type="text" id="telefone" name="telefone" placeholder="" maxlength="" class="form-control form-control-sm"
-                                            data-mask="00/00/0000"
+                                            
                                             />
                                         </div>
                                     </div>

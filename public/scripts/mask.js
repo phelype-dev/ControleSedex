@@ -1,4 +1,4 @@
-document.addEventListener('keypress', function() { //pega o evento de precionar uma tecla
+/*document.addEventListener('keypress', function() { //pega o evento de precionar uma tecla
     //if(event.keyCode != 46 && event.keyCode != 8){//verifica se a tecla precionada nao e um backspace e delete
       var i = document.getElementById("CPF").value.length; //aqui pega o tamanho do input
       if (i === 3 || i === 7) //aqui faz a divisoes colocando um ponto no terceiro e setimo indice
@@ -48,7 +48,7 @@ document.addEventListener('keydown', function(event) { //pega o evento de precio
     }
 });
 
-/*document.addEventListener('keydown', function(event) { //pega o evento de precionar uma tecla
+document.addEventListener('keydown', function(event) { //pega o evento de precionar uma tecla
   if(event.keyCode != 46 && event.keyCode != 8){//verifica se a tecla precionada nao e um backspace e delete
     var i = document.getElementById("telefone").value.length; //aqui pega o tamanho do input
     if ( i === 0) //aqui faz a divisoes colocando um ponto no terceiro e setimo indice
@@ -59,3 +59,37 @@ document.addEventListener('keydown', function(event) { //pega o evento de precio
       document.getElementById("telefone").value = document.getElementById("telefone").value + "-";
   }
 });*/
+
+function mascara(i){
+  var v = i.value;
+  if(isNaN(v[v.length-1])){ // impede entrar outro caractere que não seja número
+    i.value = v.substring(0, v.length-1);
+    return;
+  }
+  i.setAttribute("maxlength", "14");
+  if (v.length == 3 || v.length == 7) i.value += ".";
+  if (v.length == 11) i.value += "-";
+}
+
+function mascaraCEP(i){
+  var v = i.value;
+  if(isNaN(v[v.length-1])){ // impede entrar outro caractere que não seja número
+    i.value = v.substring(0, v.length-1);
+    return;
+  }
+  i.setAttribute("maxlength", "9");
+  if (v.length == 5 ) i.value += "-";
+}
+
+function mascaraLongitude(i){
+  var v = i.value;
+  if(isNaN(v)){
+    i.value;
+    return;
+  }
+
+  i.setAttribute("maxlength", "12");
+  if (v.length === 0 ) i.value += "-";
+  else if (v.length === 3) i.value += ".";
+}
+
