@@ -1,0 +1,42 @@
+<%- include ('parts/header') %>
+<body class="fundo">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-5 border form-login">
+        <form action="">
+          <img class="img rounded mx-auto d-block" src="images/logo2.png" alt="">
+          <div class="form-floating mb-3">
+            <input
+              type="username"
+              class="form-control form-control-sm input-config"
+              id="username"
+              name="username"
+              placeholder="username"
+            />
+            <label for="floatingInput">Usuário</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="password"
+              class="form-control form-control-sm input-config"
+              id="password"
+              name="password"
+              placeholder="Senha"
+            />
+            <label for="floatingPassword">Senha</label>
+          </div>
+          <div class="d-grid gap-2 btn-login">
+            <button class="btn btn-config" type="button"><h6>LOGAR</h6></button>
+            <button class="btn btn-config" type="button"><h6>CANCELAR</h6></button>
+          </div>
+
+          <div class="row">
+              <div class="col text-center">
+                <span>Não possui acesso ? <a href="#">clique aqui para solicitar</a></span>
+              </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
